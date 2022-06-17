@@ -40,13 +40,10 @@ namespace Calculator
         }
         public double Mass(double[] mass) 
         { 
-            double sum = 0;
+            double sum = mass.Sum();
           
-            for (int i = 0; i < mass.Length; i++)
-            {
-                sum += mass[i];    
-            }
             return sum / mass.Length;
+           
         }
     }
     class Program

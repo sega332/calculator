@@ -22,7 +22,12 @@ namespace Calculator
             return a * b;
         }
         public double Divide(double a, double b)
+            
         {
+            if ( a==0 || b==0 )
+            {
+                return 0;
+            }
             return a / b;
         }
         public double Pt(double a, double h)
